@@ -1,0 +1,142 @@
+/* Start style  all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* End style  all */
+
+/* Start style  content nav*/
+header{
+    position: fixed;
+    width: 100%;
+}
+nav{
+    background-color: #F47120;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.logo img{
+    Width :100px;
+    padding-left: 10px;
+}
+.navbar{
+    position: relative;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+/* End style  content nav*/
+
+/* Start style  icon nav */
+.burgerIcon,.shoppingCart{
+   font-size: 25px;
+    color: white;
+    padding-right: 20px;
+}
+
+/* End style  icon nav */
+
+/* Start style  nav link */
+.navLinks{
+    list-style: none;
+    background-color:rgb(0,0,0,1);
+    width: 200px;
+    height: 211px;
+    position: absolute;
+    top: 49.9px;
+    right:0px;
+    opacity: 0;
+    transition:right ease-in-out 0.5s,opacity ease-in-out 0.3s;
+}
+.navLinks a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #F47120;
+    letter-spacing: 3px;
+}
+
+.active{
+    opacity: 1;
+
+}
+/* End style  nav link */
+
+
+/* Responsive Tables */
+@media (min-width:768px) and (max-width:1023px){
+    nav{
+        height: 100px;
+    }
+    .logo img{
+        Width :120px;
+    }
+    .navLinks{
+        width: 300px;
+        height: 47vh;
+        top: 62.5px;
+    }
+    .navLinks a{
+        padding: 35px;
+        font-size: 25px;
+    }
+    .burgerIcon,.shoppingCart{
+        font-size: 30px;
+         padding-right: 30px;
+     }
+    }
+    /* Responsive Mobile */
+@media   (min-width:1024px){
+   
+    .navbar{
+        display: flex;
+        width: 60%;
+        margin-left: 70px;
+    }
+    .navLinks{
+        opacity: 1;
+        position: static;
+        display: flex;
+        margin-left: -72px;
+        height: 0px;
+        right: 0;
+        transition: none;
+        background-color: black;
+    }
+    .navLinks li{
+        opacity: 1;
+        display: flex;
+        
+    }
+    .navLinks a{
+        color: white;
+        width: 135px;
+        padding: 13px 10px;
+    }
+ .navLinks li  a:hover{
+        color: black;
+        transition: all 1s ease;
+    }
+    .logo{
+        width: 40%;
+        margin-left:30px;
+    }
+    
+    .burgerIcon{
+       opacity: 0;
+    }
+}
