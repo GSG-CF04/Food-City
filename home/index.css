@@ -53,7 +53,7 @@ nav{
     width: 200px;
     height: 211px;
     position: absolute;
-    top: 49.9px;
+    top: 48.1px;
     right:0px;
     opacity: 0;
     transition:right ease-in-out 0.5s,opacity ease-in-out 0.3s;
@@ -87,11 +87,11 @@ nav{
     }
     .navLinks{
         width: 300px;
-        height: 47vh;
+        height:450px;
         top: 62.5px;
     }
     .navLinks a{
-        padding: 35px;
+        padding: 29px;
         font-size: 25px;
     }
     .burgerIcon,.shoppingCart{
