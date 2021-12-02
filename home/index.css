@@ -133,10 +133,10 @@ nav{
     }
     .burgerIcon,.shoppingCart{
         font-size: 30px;
-         padding-right: 30px;
-     }
-     #home{
-        height: 45vh;
+        padding-right: 30px;
+    }
+    #home{
+        height: 458.5px;
     }
     #home .title-home{
         
@@ -154,14 +154,13 @@ nav{
         padding: 25px;
     }
     #home .btn a{
-        font-size: 21px;
-        font-weight: 500;
+        font-size: 25px;
+        font-weight: 700;
         letter-spacing: 1px;
     }
     }
     /* Responsive Mobile */
 @media   (min-width:1024px){
-   
     .navbar{
         display: flex;
         width: 60%;
@@ -187,7 +186,7 @@ nav{
         width: 135px;
         padding: 13px 10px;
     }
- .navLinks li  a:hover{
+.navLinks li  a:hover{
         color: black;
         transition: all 1s ease;
     }
@@ -197,7 +196,7 @@ nav{
     }
     
     .burgerIcon{
-       opacity: 0;
+        opacity: 0;
     }
     #home{
         display: flex;
@@ -221,6 +220,75 @@ nav{
         font-size: 25px;
     }
 }
+
+/* Start About Us Section */
+#about-us{
+    margin: 5%;
+    margin-top: 25%;
+    display: flex;
+    font-family: Roboto, sans-serif;
+}
+#about-us .chef{
+    width:150px;
+    height: 220px;
+}
+#about-us .text{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#about-us .text h1{
+    color: #f47120;
+    padding-bottom: 5%;
+}
+#about-us .text p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (min-width:768px){
+    #about-us{
+        margin: 3% 5%;
+        margin-top: 15%;
+    }
+    #about-us .chef{
+        width:250px;
+        height: auto;
+    }
+    #about-us .text{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        line-height: 1.8;
+    }
+    #about-us .text h1{
+        font-size: 40px;
+    }
+    #about-us .text p{
+        font-size: 21px;
+        font-weight: 500;
+    }
+}
+@media (min-width:1024px){
+    #about-us{
+        margin: 2% 15%;
+        margin-top: 10%;
+    }
+    #about-us .chef{
+        width:300px;
+        height: 350px;
+    }
+    #about-us .text{
+        margin-top: 5%;
+    }
+    #about-us .text h1{
+        font-size: xx-large;
+    }
+    #about-us .text p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+/* End About Us Section */
 
 /* Start Meals Section */
 #meals{
