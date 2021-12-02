@@ -16,6 +16,7 @@ html{
 header{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 nav{
     background-color: #F47120;
@@ -114,119 +115,12 @@ nav{
 }
 /* End style  button go to menu */
 
-/* Responsive Tables */
-@media (min-width:768px) and (max-width:1023px){
-    nav{
-        height: 100px;
-    }
-    .logo img{
-        Width :120px;
-    }
-    .navLinks{
-        width: 300px;
-        height:431px;
-        top: 63px;
-    }
-    .navLinks a{
-        padding: 29px;
-        font-size: 25px;
-    }
-    .burgerIcon,.shoppingCart{
-        font-size: 30px;
-        padding-right: 30px;
-    }
-    #home{
-        height: 458.5px;
-    }
-    #home .title-home{
-        
-        font-size: 70px;
-        line-height: 1.9;
-    }
-    #home .title-resturaunt{
-        font-size: 100px;
-        
-    }
-    #home .btn{
-        width: 26%;
-        margin-left: 20px;
-        margin-top: 40px;
-        padding: 25px;
-    }
-    #home .btn a{
-        font-size: 25px;
-        font-weight: 700;
-        letter-spacing: 1px;
-    }
-    }
-    /* Responsive Mobile */
-@media   (min-width:1024px){
-    .navbar{
-        display: flex;
-        width: 60%;
-        margin-left: 70px;
-    }
-    .navLinks{
-        opacity: 1;
-        position: static;
-        display: flex;
-        margin-left: -72px;
-        height: 0px;
-        right: 0;
-        transition: none;
-        background-color: black;
-    }
-    .navLinks li{
-        opacity: 1;
-        display: flex;
-        
-    }
-    .navLinks a{
-        color: white;
-        width: 135px;
-        padding: 13px 10px;
-    }
-.navLinks li  a:hover{
-        color: black;
-        transition: all 1s ease;
-    }
-    .logo{
-        width: 40%;
-        margin-left:30px;
-    }
-    
-    .burgerIcon{
-        opacity: 0;
-    }
-    #home{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        padding-top: 90px;
-        top: 60px;
-    }
-    #home .title-home{
-        font-size: 100px;
-    }
-    #home .title-resturaunt{
-        font-size: 150px
-    }
-    #home .btn{
-        width: 16%;
-        margin-left: 20px;
-        margin-top: 50px;
-    }
-    #home .btn a{
-        font-size: 25px;
-    }
-}
-
 /* Start About Us Section */
 #about-us{
     margin: 5%;
     margin-top: 25%;
     display: flex;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 #about-us .chef{
     width:150px;
@@ -268,6 +162,7 @@ nav{
         font-weight: 500;
     }
 }
+
 @media (min-width:1024px){
     #about-us{
         margin: 2% 15%;
@@ -362,3 +257,170 @@ nav{
     }
 }
 /* End Meals Section */
+/* Start style Our Experts section */
+#our-experts{
+    margin: 6%;
+    text-align: center;
+    position: relative;
+
+}
+#our-experts .title-experts{
+    font-weight: 900;
+    color:  #F47120;
+    margin-bottom: 50px;
+}
+#our-experts .chef{
+    margin-bottom: 50px;
+}
+#our-experts .chef h4{
+    padding-top: 8px;
+    color:  #F47120;
+}
+#our-experts  .chef p{
+    color: #000;
+    padding: 5px 32px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* End style Our Experts section */
+/* Responsive Tables */
+@media (min-width:768px) and (max-width:1023px){
+    nav{
+        height: 100px;
+    }
+    .logo img{
+        Width :120px;
+    }
+    .navLinks{
+        width: 300px;
+        height:431px;
+        top: 63px;
+    }
+    .navLinks a{
+        padding: 29px;
+        font-size: 25px;
+    }
+    .burgerIcon,.shoppingCart{
+        font-size: 30px;
+        padding-right: 30px;
+    }
+    #home{
+        height: 458.5px;
+    }
+    #home .title-home{
+        
+        font-size: 70px;
+        line-height: 1.9;
+    }
+    #home .title-resturaunt{
+        font-size: 100px;
+        
+    }
+    #home .btn{
+        width: 26%;
+        margin-left: 20px;
+        margin-top: 40px;
+        padding: 25px;
+    }
+    #home .btn a{
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    #our-experts{
+        margin-top: 10%;
+    }
+    #our-experts .title-experts{
+        font-size: 50px;
+    }
+    .chef img{
+        width: 150px;
+        height: 150px;
+    }
+    #our-experts .chef h4{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #our-experts .chef p{
+    font-size: 15px;
+    font-weight: 500;
+    }
+    }
+    /* Responsive Desktop */
+@media   (min-width:1024px){
+    .navbar{
+        display: flex;
+        width: 60%;
+        margin-left: 70px;
+    }
+    .navLinks{
+        opacity: 1;
+        position: static;
+        display: flex;
+        margin-left: -72px;
+        height: 0px;
+        right: 0;
+        transition: none;
+        background-color: black;
+    }
+    .navLinks li{
+        opacity: 1;
+        display: flex;
+        
+    }
+    .navLinks a{
+        color: white;
+        width: 135px;
+        padding: 13px 10px;
+    }
+.navLinks li  a:hover{
+        color: black;
+        transition: all 1s ease;
+    }
+    .logo{
+        width: 40%;
+        margin-left:30px;
+    }
+    
+    .burgerIcon{
+        opacity: 0;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 90px;
+        top: 60px;
+    }
+    #home .title-home{
+        font-size: 100px;
+    }
+    #home .title-resturaunt{
+        font-size: 150px
+    }
+    #home .btn{
+        width: 16%;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    #home .btn a{
+        font-size: 25px;
+    }
+    #our-experts{
+        margin:5% auto;
+    }
+    #our-experts .chefs{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #our-experts .chef h4{
+        font-size: large;
+        padding-top: 10px;
+    }
+    #our-experts .chef p{
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+}
