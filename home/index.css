@@ -346,6 +346,35 @@ nav{
     font-weight: 500;
     }
     }
+
+
+      /* Start Footer Section */
+footer {
+    height: auto;
+    width: 100vw;
+    background-color: #f47120;
+    padding-bottom: 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: white;
+    position: relative;
+    bottom: -1rem;
+  }
+  
+  
+  .social-icons {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+  }
+  
+  /* End Footer Section */
+
     /* Responsive Desktop */
 @media   (min-width:1024px){
     .navbar{
