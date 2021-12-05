@@ -1,0 +1,177 @@
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+    height: 30px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F47120;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    height: 812px;
+}
+.order{
+    width: 375px;
+    height:812px ;
+    padding: 40px;
+    background-color: #fff;
+    margin-top: 30px;
+    
+}
+.order h1{
+    font-size: 1.6em;
+    color: #F47120;
+    letter-spacing: 1px;
+}
+.form-order{
+    margin-top: 30px;
+}
+.form-order input{
+width: 100%;
+height: 50px;
+margin-bottom: 40px;
+padding:32px 30px 20px 30px;
+font-size: 18px;
+outline: none;
+border: none;
+border-bottom: 1px solid #B2B2B2;
+color: #58585D;
+background-color: #fff;
+}
+.form-order input:focus{
+    border-bottom: 1px solid #F47120; 
+    background-color: #fff;
+}
+.form-order #moreDetails:focus{
+    border: 1px solid #F47120; 
+}
+.form-order .fas{
+    position: absolute;
+    padding:20px 20px 0px 0px;
+    color: #F47120;
+}
+#moreDetails{
+    width: 100%;
+    height: 150px;
+    padding:10px 20px 50px 30px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #F47120;
+    margin: 35px 0;
+    color: #58585D;
+
+}
+.btn-order{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    
+}
+.cancel-order,.submit-order{
+   
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #B2B2B2;
+    color: #fff;
+}
+.cancel-order{
+    margin-right: 10px ;
+}
+.submit-order{
+background-color: #F47120;
+}
+/* Tablet Responsive */
+@media (min-width:768px) and (max-width:1023px){
+    .order{
+        width: 90%;
+        padding: 40px;
+        background-color: #fff;
+        margin-top: 30px;
+        border-radius: 30px; 
+    }
+    .form-order{
+        margin-top: 60px;
+    }
+    .form-order input{
+        margin-bottom: 50px;
+        padding:40px 30px 30px 50px;
+        font-size: 30px;
+    }
+    .form-order .fas{
+        font-size: 30px;
+    }
+    .order h1{
+        font-size: 2.5em;
+    }
+    #moreDetails{
+        width: 100%;
+        height: 200px;
+        font-size: 30px;
+    }
+    .cancel-order,.submit-order{
+        padding: 15px 50px;
+        font-size: 25px;
+    }
+    .submit-order{
+        background-color: #F47120;
+    }
+}
+/* Desktop responsive */
+@media   (min-width:1024px){
+    .order{
+        width: 70%;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    .form-order{
+        margin-top: 35px;
+    }
+    .form-order input{
+        margin-bottom: 30px;
+        padding:30px 30px 25px 50px;
+        font-size: 20px;
+    }
+    .form-order .fas{
+        font-size: 20px;
+    }
+    .order h1{
+        font-size: 2.6em;
+    }
+    #moreDetails{
+        width: 100%;
+        height: 170px;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .cancel-order,.submit-order{
+        padding: 15px 50px;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
