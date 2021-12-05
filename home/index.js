@@ -11,7 +11,7 @@ const newSlides = () => {
 newSlides();
 
 let textarea = document.querySelector("textarea");
-let messageThank = document.querySelector(".messageThank");
+let messageThank = document.querySelector(".message_thank");
 document.querySelector(".submitBtn").addEventListener("click", function (e) {
   if (textarea.value == "") {
     e.preventDefault();

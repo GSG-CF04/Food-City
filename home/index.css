@@ -225,7 +225,7 @@ nav {
 #contact-us {
   height: 480px;
   padding: 10% 0;
-  background: url(/assets/ContactUs.png);
+  background: url("/assets/ContactUs.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -285,30 +285,31 @@ nav {
   cursor: pointer;
 }
 
-.messageThank {
+.message_thank {
   display: none;
-  width: 360px;
-  height: 55%;
+  width: 260px;
+  height: 40%;
   background-color: white;
   text-align: center;
   align-items: center;
   padding: 25px;
-  box-shadow: 0px 2px 6px #8b8b8b;
+  box-shadow: 0px 2px 66px #fdbb6f;
   border-radius: 10px;
   z-index: 9999;
   position: absolute;
   left: 50%;
-  top: 1860px;
+  top: 1815px;
   transform: translate(-50%, -50%);
 }
 
-.messageThank h1 {
-  padding-top: 100px;
+.message_thank h1 {
+  padding-top: 30px;
   color: #f47120;
+  font-size: 25px;
 }
 
-.messageThank i {
-  font-size: 90px;
+.message_thank i {
+  font-size: 70px;
   color: #f47120;
 }
 
@@ -473,17 +474,17 @@ nav {
     font-weight: 500;
   }
 
-  .messageThank {
-    width: 610px;
-    height: 40%;
+  .message_thank {
+    width: 535px;
+    height: 25%;
     top: 2470px;
   }
-  .messageThank h1 {
-    font-size: 45px;
+  .message_thank h1 {
+    font-size: 35px;
   }
 
-  .messageThank i {
-    font-size: 110px;
+  .message_thank i {
+    font-size: 100px;
   }
 }
 /* Responsive Desktop */
@@ -562,17 +563,17 @@ nav {
     font-weight: 500;
     padding-top: 10px;
   }
-  .messageThank {
-    width: 810px;
-    height: 70%;
-    top: 2100px;
+  .message_thank {
+    width: 710px;
+    height: 45%;
+    top: 2010px;
   }
-  .messageThank h1 {
-    font-size: 55px;
+  .message_thank h1 {
+    font-size: 45px;
   }
 
-  .messageThank i {
-    font-size: 130px;
+  .message_thank i {
+    font-size: 100px;
   }
 
 }
