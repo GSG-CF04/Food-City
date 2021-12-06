@@ -106,6 +106,67 @@ background-color: #fff;
 .submit-order{
 background-color: #F47120;
 }
+
+.bgOpacity {
+    width: 100%;
+    height: 812px;
+    background-color: rgba(19, 19, 19, 0.712);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: popAnimate 0.7s  ease;
+  }
+  .successful_popup {
+    display: none;
+    width: 350px;
+    height: 60%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding: 24px 0;
+    box-shadow: 0px 2px 6px #8b8b8b;
+    border-radius: 10px;
+    z-index: 9999;
+    position: absolute;
+  }
+  @keyframes popAnimate { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .successful_popup h1 {
+      font-size: 60px;
+    margin-top: 25px;
+    color: #f47120;
+  }
+  
+  .successful_popup .check {
+    font-size: 170px;
+    color: #f47120; 
+    padding-top: 70px;
+  }
+  
+  .successful_popup #closeBtn {
+    font-size: 27px;
+    background-color: #969696;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-top: 6px;
+    position: relative;
+    right: 140px;
+  
+  }
+
 /* Tablet Responsive */
 @media (min-width:768px) and (max-width:1023px){
     .order{
@@ -141,6 +202,36 @@ background-color: #F47120;
     .submit-order{
         background-color: #F47120;
     }
+
+    .bgOpacity{
+        height: 1023px;
+       
+      }
+        .successful_popup {
+          width: 80%;
+          height: 70%;
+        }
+        
+        .successful_popup h1 {
+            font-size: 90px;
+            font-weight: 900;
+            margin: 50px 0 30px 0 ;
+          color: #f47120;
+        }
+        
+        .successful_popup .check {
+          font-size: 230px;
+          padding-top: 90px;
+        }
+        
+        .successful_popup #closeBtn {
+          font-size: 40px;
+          padding-top: 10px;
+          width: 60px;
+          height: 60px;
+         
+          right: 243px;
+        }
 }
 /* Desktop responsive */
 @media   (min-width:1024px){
@@ -174,4 +265,24 @@ background-color: #F47120;
         font-size: 20px;
         margin-bottom: 5px;
     }
+    .successful_popup {
+        width: 50%;
+      
+      }
+      
+      .successful_popup h1 {
+          font-size: 90px;
+      }
+      
+      .successful_popup .check {
+        font-size: 150px;
+      }
+      
+      .successful_popup #closeBtn {
+        font-size: 40px;
+        padding-top: 10px;
+        width: 56px;
+        height: 56px;
+        right: 280px;
+      }
 }
