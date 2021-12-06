@@ -266,6 +266,7 @@ nav {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 6px;
+  outline: none;
 }
 
 #contact-us textarea {
@@ -300,6 +301,18 @@ nav {
   left: 50%;
   top: 1815px;
   transform: translate(-50%, -50%);
+  animation: popAnimate 0.7s  ease;
+
+}
+
+@keyframes popAnimate { 
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .message_thank h1 {
