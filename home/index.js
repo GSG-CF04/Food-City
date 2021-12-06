@@ -10,12 +10,12 @@ const newSlides = () => {
 };
 newSlides();
 
-let userName =document.querySelector (".field");
-let userEmail =document.querySelector ("#user_email");
-let textarea = document.querySelector("textarea");
+let userName =document.querySelector (".name-field");
+let userEmail =document.querySelector (".email-field");
+let textarea = document.querySelector(".message-field");
 
 
-let messageThank = document.querySelector(".message_thank");
+let messageThank = document.querySelector(".message-thank");
 document.querySelector(".submitBtn").addEventListener("click", function (e) {
 
   if (textarea.value == "" )  {
