@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-them="light"git>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Menu</title>
+
+    <!-- Google Fonts -->
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script&family=Dosis:wght@300&family=Gochi+Hand&family=Pacifico&family=Patrick+Hand&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet"
+    />
+    <!-- Font Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<body>
+  <!-- Start Header  -->
+  <header>
+    <nav>
+      <div class="logo">
+          <img src="../assets/logo.png">
+      </div>
+      <div class="navbar">
+        <div class="icons">
+          <div class="wholeCart">
+          <i class="fas fa-shopping-cart shoppingCart"></i>
+          <span id="count" class="count" style="display: block;">4</span>
+          </div>
+          <a href="../index.html" target="_self">
+            <i class="fas fa-long-arrow-alt-right arrow-right" ></i>
+          </a>  
+        </div>    
+      </div>
+    </nav>
+    </header>
+  <!-- End Header -->
+
+  <!-- Start Menu Section -->
+  <section id="menu">
+    <h1>Our Menu</h1>
+
+    <!-- Start Search & Filter & allButton -->
+    <div class="search-select-div">
+      <form action="" autocomplete="on">
+          <div class="input-holder">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search" id="search-input" name="search" autofocus />
+          </div>
+      </form>
+      <div class="select-menu">
+        <select  id="select">
+          <option disabled selected value='Filter'> Filter </option>
+          <option value="Breakfast" >Breakfast</option>
+          <option value="Beef">Lunch</option>
+          <option value="Chicken">Dinnar</option>
+          <option value="Dessert">Desserts</option> 
+          <option value="Ordinary_Drink">Drinks</option> 
+        </select>
+      </div>
+      <div class="allData">
+        <p class="all">All</p>
+      </div>
+    </div>
+    </section>
+    <!-- End Search & Filter & allButton -->
+
+  <!-- End Menu Section -->
+
+  <!--Start Cart Section-->
+    <div class="cart" >
+      <!-- Start Top-Cart Section -->
+      <div class="top">
+          <i class="fas fa-window-close closeBtn fa-2x"></i>
+          <h1>Your Cart</h1>
+          <h3 id="remove-all">Remove All</h3>
+      </div>
+      <!-- End Top-Cart Section -->
+
+      <!-- Start Empty Cart -->
+      <div class="empty-cart">
+          <img class="empty-img" src="../assets/emptyCart.svg" alt="">
+          <h2 class="title">Your cart is empty<br>
+          Please add your <span>Meals</span></h2>
+          <a href="menu.html"><button class="empty-cart-btn">Go to Menu</button></a>
+      </div>
+      <!-- End Empty Cart -->
+
+      <!-- Start Cart Items -->
+        <div class="cartItems"></div>
+      <!-- End Cart Items -->
+
+      <!-- Start Total Price -->
+        <div id="total-price"></div>
+      <!-- End Total Price -->
+    </div>
+  <!--End Cart Section-->
+
+  <!-- Start Container Meals -->
+    <div id="root"></div>
+  <!-- End Container Meals -->
+
+  <script src="menus.js"></script>
+</body>
+</html>
