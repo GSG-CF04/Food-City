@@ -60,7 +60,7 @@ header .navbar .icons{
     display: flex;
     justify-content: space-between;
 }
-header .navbar .arrow-right, 
+header .navbar .arrow-left, 
 header .navbar .wholeCart .shoppingCart{
     font-size: 25px;
     color: white;
@@ -515,7 +515,7 @@ color: var(--seconed-color);
         width: 150px;
         padding-left: 40px;
     }
-    header .navbar .arrow-right, 
+    header .navbar .arrow-left, 
     header .navbar .wholeCart .shoppingCart{
         padding-right: 40px;
     }
