@@ -1,4 +1,3 @@
-
 //Declear General Variables
 let root = document.querySelector("#root")
 let container = document.createElement("div")
@@ -126,11 +125,17 @@ select.addEventListener('change',()=>{
     }
 })
 
+// toggle arrow select
+let selectShow = document.querySelector('.select-menu')
+selectShow.addEventListener('click',()=>{
+    selectShow.classList.toggle('arrow-active')
+})
 
 // Whole Menu
 all.addEventListener('click',()=>{
     location.reload();
 })
+
 // Display food data 
 function displayCatogaries(meal) {
     let randomPrice = Math.random()
@@ -218,7 +223,7 @@ function displayCatogarieDrink (drinks){
     root.appendChild(container)
 }
 
-// Start Cart Section
+// // Start Cart Section
 
 let cart = document.querySelector(".cart")
 let cartItems = document.querySelector(".cartItems")
@@ -269,8 +274,10 @@ function addToLocalStorage(){
                 window.localStorage.setItem("Item", JSON.stringify(mealsOrder))
                 addToCart()
         })
+        
     }
-    }
+    
+}
 
 // Add Data To The Cart
 function addToCart(){
@@ -321,7 +328,7 @@ function addToCart(){
             text.appendChild(name)
             text.appendChild(price)
             info.appendChild(text)
-
+    
             let counter = document.createElement("div")
             counter.className = "counter"
             let minus = document.createElement("i")
@@ -361,6 +368,8 @@ function addToCart(){
                 return countNum.textContent
             }) 
 
+            totalPriceFunc()
+
             counter.appendChild(minus)
             counter.appendChild(countNum)
             counter.appendChild(plus)
@@ -376,9 +385,11 @@ function addToCart(){
             deleteItem.appendChild(deleteIcon)
     
             mealInfo.appendChild(deleteItem)
+    
             cartItems.appendChild(mealInfo)
 
             // Total Price Function
+
             function totalPriceFunc(){
                 let totalPriceNum = 0;
                 for(let i = 0; i < mealsOrder.length; i++){
@@ -386,36 +397,35 @@ function addToCart(){
                     let priceNum = priceText.match(/\d/g);
                     priceNum = +(priceNum.join(""));
                     totalPriceNum += priceNum
-                    }
+                }
                 return totalPriceNum;
             }
-            }
+        }
+        
+        let totalPrice = document.createElement("div")
+        totalPrice.className = "totalPrice"
+        let priceText = document.createElement("h2")
+        priceText.className = "priceText"
+        priceText.textContent = "Total Price"
+        totalPrice.appendChild(priceText)
+        let priceValue = document.createElement("h2")
+        priceValue.className = "priceValue"
+        priceValue.textContent = `${totalPriceFunc()} $`
+        totalPrice.appendChild(priceValue)
+        totalPricePar.appendChild(totalPrice)
 
-            let totalPrice = document.createElement("div")
-            totalPrice.className = "totalPrice"
-            let priceText = document.createElement("h2")
-            priceText.className = "priceText"
-            priceText.textContent = "Total Price"
-            totalPrice.appendChild(priceText)
-            let priceValue = document.createElement("h2")
-            priceValue.className = "priceValue"
-            priceValue.textContent = `${totalPriceFunc()} $`
-            totalPrice.appendChild(priceValue)
+        let orderNowLink = document.createElement("a")
+        orderNowLink.className = "orderNowLink"
+        orderNowLink.setAttribute("href", "../order/order.html")
 
-            cartItems.appendChild(totalPrice)
+        let orderNowBtn = document.createElement("bottun")
+        orderNowBtn.className = "orderBtn"
+        orderNowBtn.textContent = "Order Now"
 
-            let orderNowLink = document.createElement("a")
-            orderNowLink.className = "orderNowLink"
-            orderNowLink.setAttribute("href", "../Account.html")
+        orderNowLink.appendChild(orderNowBtn)
+        totalPricePar.appendChild(orderNowLink)
 
-            let orderNowBtn = document.createElement("bottun")
-            orderNowBtn.className = "orderBtn"
-            orderNowBtn.textContent = "Order Now"
-
-            orderNowLink.appendChild(orderNowBtn)
-            cartItems.appendChild(orderNowLink)
-    }
-
+}
 
 // Delete The Item 
 function deleteItem(id){
@@ -438,15 +448,5 @@ function removeAllFunc(){
     addToCart()
 }
 
-// // Total Price Function
 
-// function totalPriceFunc(){
-//     let totalPriceNum = 0;
-//     for(let i = 0; i < mealsOrder.length; i++){
-//         let priceText = mealsOrder[i].price
-//         let priceNum = priceText.match(/\d/g);
-//         priceNum = +(priceNum.join(""));
-//         totalPriceNum += priceNum
-//     }
-//     return totalPriceNum;
-// }
+
