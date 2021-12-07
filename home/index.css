@@ -240,52 +240,52 @@ header .navbar .icons .count{
 
     /* Start Contact Us Section */
 
-    #contact-us {
-    height: 480px;
-    padding: 10% 0;
-    background: url("/assets/contactUs.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    }
-    #contact-us .container {
-    position: relative;
-    }
-    #contact-us form {
-    width: 90%;
-    margin: auto;
-    padding: 40px;
-    margin-top: 10%;
-    border-radius: 6px;
-    background-color: white;
-    position: relative;
-    }
-    #contact-us .title {
-    width: 40%;
-    font-size: 15px;
-    text-align: center;
-    height: 60px;
-    padding: 15px;
-    margin-bottom: 25px;
-    background-color: #f47120;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    margin-left: 30%;
-    margin-right: 30%;
-    top: -30px;
-    }
-    #contact-us .title h2 {
-    color: white;
-    }
-    .name-field, .email-field, .message-field {
-    width: 100%;
-    border: 2px solid rgb(250, 174, 123);
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 6px;
-    outline: none;
-    }
+#contact-us {
+  height: 480px;
+  padding: 10% 0;
+  background: url("../assets/contactUs.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#contact-us .container {
+  position: relative;
+}
+#contact-us form {
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  margin-top: 10%;
+  border-radius: 6px;
+  background-color: white;
+  position: relative;
+}
+#contact-us .title {
+  width: 40%;
+  font-size: 15px;
+  text-align: center;
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #f47120;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 30%;
+  margin-right: 30%;
+  top: -30px;
+}
+#contact-us .title h2 {
+  color: white;
+}
+.name-field, .email-field, .message-field {
+  width: 100%;
+  border: 2px solid rgb(250, 174, 123);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+}
 
     #contact-us textarea {
     min-height: 100px;
