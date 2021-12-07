@@ -5,10 +5,10 @@ FoodCity website is an online restaurant, that you can order the meals.
 # **Project Description**
 The website is an online food restaurant that has many dishes of different types, we have Breakfast, Lunch, Dinner, Drinks, and Desserts. You don't have to go to the restaurant, you can order any meal that you want and it will reach you fast. 
 # **Links**
-[Figma link](https://www.figma.com/file/zdUr01CJQkICT6jhy9IBr3/FoodCity-Project?node-id=0%3A1)
-[Live link](https://gsg-cf04.github.io/Food-City/)
-[API documentation/Food](https://www.themealdb.com/api.php?fbclid=IwAR2VOQO_RqXwG8_5qHhR2DQUK0UL3oJHXMdc-PF2dJkg8n3VeftW0tB2G98)
-[API documentation/Drinks](https://www.thecocktaildb.com/api.php)
+* [Figma link](https://www.figma.com/file/zdUr01CJQkICT6jhy9IBr3/FoodCity-Project?node-id=0%3A1)
+* [Live link](https://gsg-cf04.github.io/Food-City/)
+* [API documentation/Food](https://www.themealdb.com/api.php?fbclid=IwAR2VOQO_RqXwG8_5qHhR2DQUK0UL3oJHXMdc-PF2dJkg8n3VeftW0tB2G98)
+* [API documentation/Drinks](https://www.thecocktaildb.com/api.php)
 # **Problem**
 Due to COVID-19, people could not be able to go out to restaurants for a meal which made restaurants have to go bankrupt due to a lack of customers.
 # **Soluation**
