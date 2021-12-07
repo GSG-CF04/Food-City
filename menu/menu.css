@@ -51,7 +51,7 @@ nav{
 }
 header .logo img{
     Width :100px;
-    padding-right: 20px;
+   margin-left: 5px;
 }
 header .navbar{
     position: relative;
@@ -60,7 +60,7 @@ header .navbar .icons{
     display: flex;
     justify-content: space-evenly;
 }
-header .navbar .arrow-left, 
+ 
 header .navbar .wholeCart .shoppingCart{
     font-size: 25px;
     color: white;
@@ -69,7 +69,7 @@ header .navbar .wholeCart .shoppingCart{
 }
 header .navbar .icons .wholeCart .shoppingCart{
     position:relative;
-    margin-left: 10px;
+    margin-right: 31px
 }
 header .navbar .icons .count{
     position: absolute;
@@ -88,7 +88,13 @@ header .navbar .icons .count{
 
 /* Start Menu Section */
 #menu {
-    padding-top:130px;
+    padding-top: 100px;
+}
+#menu .arrow-left{
+    font-size: 30px;
+    color: #f47120;
+    margin-left: 10px;
+    cursor:pointer;
 }
 #menu h1{
     color: var(--main-color);
@@ -391,6 +397,9 @@ color: var(--seconed-color);
 /* End Top-Cart Section */
 
 @media (min-width:768px) and (max-width:1023px){
+    #menu .arrow-left{
+        margin-left: 30px;
+    }
     #menu h1{
         padding-bottom:50px;
         font-size: 50px;
@@ -519,6 +528,9 @@ color: var(--seconed-color);
     header .navbar .arrow-left, 
     header .navbar .wholeCart .shoppingCart{
         padding-right: 40px;
+    }
+    #menu .arrow-left{
+        margin-left: 60px;
     }
     #menu h1{
         padding-bottom:50px;
