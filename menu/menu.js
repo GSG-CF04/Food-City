@@ -109,5 +109,38 @@ function addToCart(){
             text.appendChild(name)
             text.appendChild(price)
             info.appendChild(text)
+
+            let deleteItem = document.createElement("div")
+            deleteItem.className = "deleteItem"
+            let deleteIcon = document.createElement("i")
+            deleteIcon.className = "fas fa-trash-alt delete"
+            deleteIcon.setAttribute('onClick', `deleteItem(${mealsOrder[i].id})`)
+            deleteItem.appendChild(deleteIcon)
+    
+            mealInfo.appendChild(deleteItem)
+
+            cartItems.appendChild(mealInfo)
         }
     }
+
+
+// Delete The Item 
+function deleteItem(id){
+
+    for(let i = 0; i < mealsOrder.length; i++){
+        if(mealsOrder[i].id == id){
+            mealsOrder.splice(i, 1)
+        }
+        window.localStorage.setItem("Item", JSON.stringify(mealsOrder))
+    }
+    addToCart()
+}
+
+// Remove All Data
+removeAll.setAttribute('onclick', 'removeAllFunc()');
+function removeAllFunc(){
+    mealsOrder = '[]'
+    window.localStorage.setItem("Item", mealsOrder)
+    location.reload()
+    addToCart()
+}
