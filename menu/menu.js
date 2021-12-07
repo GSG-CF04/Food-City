@@ -322,6 +322,52 @@ function addToCart(){
             text.appendChild(price)
             info.appendChild(text)
 
+            let counter = document.createElement("div")
+            counter.className = "counter"
+            let minus = document.createElement("i")
+            minus.className = "fas fa-minus-square"
+            
+
+            let countNum = document.createElement("h3")
+            countNum.className = "countNum"
+            countNum.textContent = 1;
+
+            let plus = document.createElement("i")
+            plus.className = "fas fa-plus-square"
+
+            let itemPriceText = price.textContent
+            let itemPriceNum = itemPriceText.match(/\d/g);
+            itemPriceNum = +(itemPriceNum.join(""));
+
+                    
+            // Plus Function
+            plus.addEventListener('click', () =>{
+                countNum.textContent = Number(countNum.textContent)+1 
+                let itemTotalPrice = Number(countNum.textContent * itemPriceNum) 
+                price.textContent = `${itemTotalPrice}$`;
+                return countNum.textContent
+            })
+            
+            // Minus Function
+            minus.addEventListener('click', (e) =>{
+                if(countNum.textContent <= 1){
+                    e.isTrusted = false
+                }else{
+                    e.isTrusted = true
+                    countNum.textContent = Number(countNum.textContent)-1
+                    let itemTotalPrice = Number(countNum.textContent * itemPriceNum)
+                    price.textContent = `${itemTotalPrice}$`;
+                }
+                return countNum.textContent
+            }) 
+
+            counter.appendChild(minus)
+            counter.appendChild(countNum)
+            counter.appendChild(plus)
+            info.appendChild(counter)
+    
+            mealInfo.appendChild(info)
+
             let deleteItem = document.createElement("div")
             deleteItem.className = "deleteItem"
             let deleteIcon = document.createElement("i")
@@ -330,7 +376,7 @@ function addToCart(){
             deleteItem.appendChild(deleteIcon)
     
             mealInfo.appendChild(deleteItem)
-
+    
             cartItems.appendChild(mealInfo)
         }
     }
