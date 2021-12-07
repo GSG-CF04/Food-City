@@ -51,28 +51,29 @@ nav{
 }
 header .logo img{
     Width :100px;
-    padding-left: 10px;
+    padding-right: 20px;
 }
 header .navbar{
     position: relative;
 }
 header .navbar .icons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 header .navbar .arrow-left, 
 header .navbar .wholeCart .shoppingCart{
     font-size: 25px;
     color: white;
-    margin-right: 20px;
+    margin-left: 10px;
     cursor:pointer;
 }
 header .navbar .icons .wholeCart .shoppingCart{
-    position:relative
+    position:relative;
+    margin-left: 10px;
 }
 header .navbar .icons .count{
     position: absolute;
-    left: 15px;
+    left: 25px;
     top: -9px;
     background-color:red ;
     border-radius: 5px;
