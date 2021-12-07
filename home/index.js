@@ -38,3 +38,17 @@ document.querySelector(".submitBtn").addEventListener("click", function (e) {
   }, 1000);
 
 });
+
+let openCartIcon = document.querySelector(".wholeCart")
+
+// Open Cart
+openCartIcon.addEventListener('click', ()=>{
+    cart.classList.toggle("openCart")
+    addToCart()
+})
+
+// Close the Cart
+let closeCartBtn = document.querySelector(".closeBtn")
+closeCartBtn.addEventListener('click', function() {
+    cart.classList.toggle("openCart") //why openCart not cart
+});
