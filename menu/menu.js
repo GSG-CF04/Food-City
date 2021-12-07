@@ -376,9 +376,44 @@ function addToCart(){
             deleteItem.appendChild(deleteIcon)
     
             mealInfo.appendChild(deleteItem)
-    
             cartItems.appendChild(mealInfo)
-        }
+
+            // Total Price Function
+            function totalPriceFunc(){
+                let totalPriceNum = 0;
+                for(let i = 0; i < mealsOrder.length; i++){
+                    let priceText = mealsOrder[i].price
+                    let priceNum = priceText.match(/\d/g);
+                    priceNum = +(priceNum.join(""));
+                    totalPriceNum += priceNum
+                    }
+                return totalPriceNum;
+            }
+            }
+
+            let totalPrice = document.createElement("div")
+            totalPrice.className = "totalPrice"
+            let priceText = document.createElement("h2")
+            priceText.className = "priceText"
+            priceText.textContent = "Total Price"
+            totalPrice.appendChild(priceText)
+            let priceValue = document.createElement("h2")
+            priceValue.className = "priceValue"
+            priceValue.textContent = `${totalPriceFunc()} $`
+            totalPrice.appendChild(priceValue)
+
+            cartItems.appendChild(totalPrice)
+
+            let orderNowLink = document.createElement("a")
+            orderNowLink.className = "orderNowLink"
+            orderNowLink.setAttribute("href", "../Account.html")
+
+            let orderNowBtn = document.createElement("bottun")
+            orderNowBtn.className = "orderBtn"
+            orderNowBtn.textContent = "Order Now"
+
+            orderNowLink.appendChild(orderNowBtn)
+            cartItems.appendChild(orderNowLink)
     }
 
 
@@ -402,3 +437,16 @@ function removeAllFunc(){
     location.reload()
     addToCart()
 }
+
+// // Total Price Function
+
+// function totalPriceFunc(){
+//     let totalPriceNum = 0;
+//     for(let i = 0; i < mealsOrder.length; i++){
+//         let priceText = mealsOrder[i].price
+//         let priceNum = priceText.match(/\d/g);
+//         priceNum = +(priceNum.join(""));
+//         totalPriceNum += priceNum
+//     }
+//     return totalPriceNum;
+// }

@@ -593,10 +593,9 @@ color: var(--seconed-color);
     }
     .card .detailsCategory .mealName,
     .card .detailsCategoryDrinks .drinkName,  
-     .card .detailsCategory .mealDetails h5,
+    .card .detailsCategory .mealDetails h5,
     .card .detailsCategoryDrinks .drinkDetails h5{ 
-         font-size: 22px;
- 
+        font-size: 22px;
         }    
     .cart{
         width:40%;
@@ -609,7 +608,5 @@ color: var(--seconed-color);
         font-size: 20px;
         width: 50%;
         margin: 0 25% 15% 20px;
-
     }
-    
 }
