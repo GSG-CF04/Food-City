@@ -225,7 +225,7 @@ nav {
 #contact-us {
   height: 480px;
   padding: 10% 0;
-  background: url("/assets/contactUs.png");
+  background: url("../assets/contactUs.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
